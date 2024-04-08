@@ -36,7 +36,7 @@
 - muốn xóa một container thì phải dừng container đó hoặc thêm -f để có thể xóa bất kỳ nó đang dừng hay hoạt động
 
 docker format: ID\t{{.ID}}\nName\t{{.Names}}\nImage\t{{.Image}}\nStatus\t{{.Status}}\nPorts\t{{.Ports}}\nCommand\t{{.Command}}\nCreated\t{{.CreatedAt}}\nSize\t{{.Size}}\n
-export FORMAT=ID\t{{.ID}}\nName\t{{.Names}}\nImage\t{{.Image}}\nStatus\t{{.Status}}\nPorts\t{{.Ports}}\nCommand\t{{.Command}}\nCreated\t{{.CreatedAt}}\nSize\t{{.Size}}\n
+export FORMAT="ID\t{{.ID}}\nName\t{{.Names}}\nImage\t{{.Image}}\nStatus\t{{.Status}}\nPorts\t{{.Ports}}\nCommand\t{{.Command}}\nCreated\t{{.CreatedAt}}\nSize\t{{.Size}}\n"
 
 docker ps --format=$FORMAT
 
