@@ -38,6 +38,9 @@
 docker format: ID\t{{.ID}}\nName\t{{.Names}}\nImage\t{{.Image}}\nStatus\t{{.Status}}\nPorts\t{{.Ports}}\nCommand\t{{.Command}}\nCreated\t{{.CreatedAt}}\nSize\t{{.Size}}\n
 export FORMAT=ID\t{{.ID}}\nName\t{{.Names}}\nImage\t{{.Image}}\nStatus\t{{.Status}}\nPorts\t{{.Ports}}\nCommand\t{{.Command}}\nCreated\t{{.CreatedAt}}\nSize\t{{.Size}}\n
 
-docker ps --format=%FORMAT
+docker ps --format=$FORMAT
 
 4. Docker volumnes
+- Cho phép dữ liệu được chia sẻ giữa các container Docker hoặc giữa container và máy host.
+- Giữ cho dữ liệu không thay đổi khi container được xóa hoặc khởi động lại
+- 
