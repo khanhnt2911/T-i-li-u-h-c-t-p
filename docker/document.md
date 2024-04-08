@@ -41,8 +41,20 @@ export FORMAT="ID\t{{.ID}}\nName\t{{.Names}}\nImage\t{{.Image}}\nStatus\t{{.Stat
 docker ps --format=$FORMAT
 
 4. Docker volumnes
+
 - Cho phép dữ liệu được chia sẻ giữa các container Docker hoặc giữa container và máy host.
 - Giữ cho dữ liệu không thay đổi khi container được xóa hoặc khởi động lại
 
 5. Dockerfile
-- Tạo ra một image của bạn
+
+- Một Dockerfile là một tệp văn bản chứa một loạt các hướng dẫn để tự động hóa quá trình xây dựng một hình ảnh Docker. Mỗi Dockerfile mô tả một bước trong quá trình xây dựng hình ảnh cuối cùng, bao gồm cách cài đặt và cấu hình môi trường cho ứng dụng hoặc dịch vụ cụ thể mà hình ảnh sẽ chạy.
+
+- Dockerfile thường bao gồm các hướng dẫn như FROM, RUN, COPY, CMD, EXPOSE, và WORKDIR để mô tả các bước cần thiết để tạo ra một hình ảnh Docker. Dưới đây là một số hướng dẫn phổ biến trong Dockerfile:
+
+- FROM: Xác định hình ảnh cơ sở mà bạn muốn xây dựng hình ảnh của mình trên.
+- RUN: Chạy các lệnh trong một bản sao tạm thời của container và tạo ra một lớp mới trong hình ảnh khi hoàn thành.
+- COPY hoặc ADD: Sao chép các tệp và thư mục từ máy chủ nơi bạn xây dựng hình ảnh vào hình ảnh Docker.
+- CMD hoặc ENTRYPOINT: Xác định lệnh mặc định mà container sẽ thực thi khi được khởi chạy.
+- EXPOSE: Xác định cổng mạng mà container sẽ lắng nghe các kết nối từ bên ngoài.
+- WORKDIR: Xác định thư mục làm việc mặc định cho các lệnh trong Dockerfile.
+- Dockerfile cho phép bạn tự động hóa quá trình xây dựng và cấu hình các môi trường phát triển và triển khai của ứng dụng của bạn, giúp đơn giản hóa việc triển khai và chia sẻ ứng dụng trong
