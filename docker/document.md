@@ -43,4 +43,6 @@ docker ps --format=$FORMAT
 4. Docker volumnes
 - Cho phép dữ liệu được chia sẻ giữa các container Docker hoặc giữa container và máy host.
 - Giữ cho dữ liệu không thay đổi khi container được xóa hoặc khởi động lại
-- 
+
+5. Dockerfile
+- Tạo ra một image của bạn
