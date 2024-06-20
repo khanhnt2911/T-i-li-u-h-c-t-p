@@ -2,7 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Singleton singleton = Singleton.getInstance();
-        System.out.println(singleton);
+        Singleton s1 = Singleton.getInstance();
+        Singleton s2 = Singleton.getInstance();
+        System.out.println(s1 == s2);
     }
 }
