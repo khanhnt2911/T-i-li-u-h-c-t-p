@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="builder" />
         <module name="untitled" />
         <module name="Singleton" />
         <module name="abstract_factory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Builder" target="17" />
       <module name="singleton" target="17" />
     </bytecodeTargetLevel>
   </component>

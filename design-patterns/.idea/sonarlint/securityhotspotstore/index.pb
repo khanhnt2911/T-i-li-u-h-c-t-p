@@ -13,5 +13,15 @@ o
 ?factory_method/src/main/java/org/example/ConcreateCreatorA.java,8\5\85a4510529c83b2028b59d9f24101412e9e01ec0
 f
 6factory_method/src/main/java/org/example/ProductB.java,0\9\0949a8937e16598c33209668ea4fc9a4139e34f5
-E
-builder/src/Main.java,1\6\16f2f564c87ca7eb1a7cc3db1239e089438daf13
+?
+builder/pom.xml,4\4\4420908ac64f7d284a5f7759437c0890454866cc
+[
++builder/src/main/java/org/example/Main.java,9\7\97196a5b4ecb59683eccc4119336fc867f583ecc
+\
+,builder/src/main/java/org/example/House.java,6\b\6b40ca0129a1af6b10cc90e8935548cc8da258a6
+c
+3builder/src/main/java/org/example/HouseBuilder.java,f\e\fedb221b573f13b2e361a3eec4aaecc2c8553be5
+d
+4builder/src/main/java/org/example/HouseDirector.java,2\3\237b1a55c1cc5ae18f1e18bd4ec53350068c0994
+k
+;builder/src/main/java/org/example/ConcreteBuilderHouse.java,4\e\4e51989cf13c5a541790fbfb77a2f145b15cdbe5
